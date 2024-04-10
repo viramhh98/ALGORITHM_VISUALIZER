@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Algorithm Visualizer</title>
+</head>
+
+<body>
+    <ul class="nav_items">
+        <li class="nav_links" id="dact">Divide and Conquer
+            <i class="ri-arrow-drop-down-fill"></i>
+            <ul class="sub-menu">
+                <li><span>Counting Sort</span></li>
+                <li>Quick Sort</li>
+            </ul>
+        </li>
+        <li class="nav_links" id="bft">Brute Force
+            <i class="ri-arrow-drop-down-fill"></i>
+            <ul class="sub-menu">
+                <li>Bubble Sort</li>
+                <li>Heap Sort</li>
+                <li>Insertion Sort</li>
+                <li>Selection Sort</li>
+            </ul>
+        </li>
+        <li class="nav_links" id="dpt">Dynamic Programming
+            <i class="ri-arrow-drop-down-fill"></i>
+            <ul class="sub-menu">
+                <li>Pascal Triangle</li>
+                <li>Fibonacci</li>
+                <li>Shortest Common Subsequence</li>
+            </ul>
+        </li>
+    </ul>
+    <section class="main">
+        <div class="left">
+            <div class="left_data">
+                <div class="btn inp-btn">Input</div>
+                <table>
+                    <tbody id="matrix">
+                    </tbody>
+                </table>
+            </div>
+            <div class="left_data">
+                <div class="btn oup-btn">Output</div>
+                <table>
+                    <tbody id="matrix2">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="mid">
+            <div class = "nav">
+                <i class="ri-play-fill ply"></i>
+                <div class="btn_play">Play</div>
+                <div class="speed">Speed</div>
+            </div>
+
+            <table>
+                <tbody id="matrix3">
+                </tbody>
+            </table>
+
+            <div class = "complexity">
+                <div>Time Complexity : <span class = "time"></span></div>
+                <div>Space Complexity : <span class = "space"></span></div>
+            </div>
+            
+        </div>
+        <div class="right">Written Code</div>
+    </section>
+
+    <script src="matrix.js"></script>
+    <!-- <script src="app.js"></script> -->
+</body>
+
+</html>
